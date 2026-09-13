@@ -71,7 +71,7 @@ export default function Home() {
       const formData = new FormData();
       formData.append("file", image);
 
-      const response = await fetch("https://agrivision-ai-0wzl.onrender.com/analyze", 
+      const response = await fetch("https://agrivision-ai-production.up.railway.app/analyze", 
         {
           method: "POST",
           body: formData,
