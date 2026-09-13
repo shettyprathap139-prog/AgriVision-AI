@@ -11,11 +11,11 @@ app = FastAPI(title="AgriVision AI API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "https://agrivision-ai.vercel.app",
-    "https://agri-vision-ai-sage.vercel.app",
-]
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "https://agrivision-ai.vercel.app",
+        "https://agri-vision-ai-sage.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
